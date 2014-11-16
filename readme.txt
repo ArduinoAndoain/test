@@ -18,8 +18,8 @@ Experimento: Obtener la lista de seguidores
 twitter.get_friends_list =lista de "a quien yo sigo"
 twitter.get_followers_list = lista de "quien me sigue"
 
-Experimento: ver los tweets recibidos
-=====================================
+Experimento: ver los tweets "recibidos"
+=======================================
 
 Para esto, @olivier_georg ha mandado este tweet:
 
@@ -30,3 +30,11 @@ Quiero ver como leerlo, y contestar a @olivier_georg
 Un lista de ids de mentions
 De esta lista, saco un id de mention: id_last_answered
 a todos las mentions despues de ese, le mando un tweet con la hora
+
+Si un tweet mandado a @arduinoandoain contiene #time
+
+    tweet['entities']['hashtags']['text'] == 'time'
+
+Hay que mandar un tweet a
+
+    tweet['user']['id']
