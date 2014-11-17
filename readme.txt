@@ -33,7 +33,7 @@ a todos las mentions despues de ese, le mando un tweet con la hora
 
 Si un tweet mandado a @arduinoandoain contiene #time
 
-    tweet['entities']['hashtags']['text'] == 'time'
+    tweet['entities']['hashtags'][0]['text'] == 'time'
 
 Hay que mandar un tweet a
 
